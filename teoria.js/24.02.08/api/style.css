@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main__div{
+    width: 400px;
+}
+img{
+    object-fit: cover;
+    object-position: top;
+    width: 65%;
+    height: 200px;
+}

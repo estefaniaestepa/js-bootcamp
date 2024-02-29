@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Forumlario</title>
+    <script defer src="formulario.js"></script>
+
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+  
+</head>
+<body>
+   <form id="form">
+    <label for="password">
+        Password
+    </label>
+    <input name="password" id="password"> <!-- si ponemos type="password" no nos muestra la constaseña cuando la estamos escribiendo -->
+    <br>
+    <div id="passworRequeriments" class="hidden">
+        <p>La constraseña debe tener mínimo:</p>
+        <ul>
+            <li><span id="charRequeriment"></span>1 Letra</li>
+            <li><span id="numberRequeriment"></span>1 Número</li>
+            <li><span id="specialCharacterRequeriment"></span>1 arroba @</li>
+        </ul>
+    </div> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  font-family: 'Space Grotesk' , sans-serif;
+  background-color: #141c29;
+  padding-top: 80px;
+  box-shadow: 0 4px 5px #000
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 30px 0px;
+  color: aliceblue;
+}
+
+img{
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+  height: 10%;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.titulo{
+  font-size: 44px;
+}
+
+.carrito{
+  width: 100px;
+  height: 50px;
+}
+
+.scroll{
+  background-color:  #141c29;
+  box-shadow: .1rem .2rem .3rem #333;
+}
+
+/* .scroll img{
+  filter: invert(15%);
+} */
+
+/* .scroll h1{
+  color: #141c29;
+}*/
+
+#productos-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #2d4263;
+  max-width: 242px;
+}
+
+#productos-carrito p {
+  font-size: 11px;
+  text-align: center;
+}
+
+#productos-carrito > div {
+  width: 100px; /* Ancho deseado para cada producto */
+  margin: 10px; /* Espacio entre productos */
+}
+
+#productos-carrito img {
+  max-width: 100%; /* Ajusta la anchura máxima de la imagen al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción de la imagen */
+
+}
+
+.carrito-lleno {
+  border: 2px solid red; /* Cambia el borde del icono del carrito cuando hay elementos en el carrito */
+}
+
+.btn-eliminar {
+  background-color: red; /* Cambia el color de fondo del botón "Eliminar" */
+  color: white; /* Cambia el color del texto del botón "Eliminar" */
+  background-color: #11294d;
+  border: none; /* Elimina el borde del botón "Eliminar" */
+  padding: 5px 10px; /* Ajusta el padding del botón "Eliminar" */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón "Eliminar" */
+}
+
+.carrito{
+/*   filter: invert(100%); */
+  width: 45px;
+  height: auto;
+}
+
+.contenedor{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+
+}
+
+.contenedor>div{
+box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+background-color: #2d4263;
+border-radius: 20px;
+}
+
+.contenedor>div:hover{
+  background-color: #11294d;
+}
+
+.informacion{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.informacion>p:first-child{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.informacion .precio{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacion .precio span{
+font-size: 17px;
+font-weight: 300;
+}
+
+.informacion button{
+  background-color: #263143;
+  width:  100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.informacion button:hover{
+  background-color: #2d4263;
+}

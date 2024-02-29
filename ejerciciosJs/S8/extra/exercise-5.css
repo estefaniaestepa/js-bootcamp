@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 410px;
+  margin: 0;
+  padding: 0;
+  font-family: "Kode Mono", monospace;
+  /* Utiliza la fuente importada */
+  background-image: url("s8_img/photo-1633613286848-e6f43bbafb8d.jpg");
+  /* Cambia la URL de la imagen de fondo */
+  background-attachment: fixed;
+  /* Fija la imagen de fondo */
+  background-position: center;
+  /* Centra la imagen de fondo en la ventana */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen de fondo */
+  font-weight: bold;
+}
+
+.input-container {
+  position: fixed;
+  top: 20px;
+  /* Ajusta la distancia desde la parte superior */
+}
+
+.input-container input {
+  margin-bottom: 10px;
+}
+
+.input-container button {
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 20px;
+  font-weight: bold;
+  width: 334px;
+}
+
+button {
+  font-size: 20px;
+  /* Ajusta el tamaño de fuente según sea necesario */
+  font-weight: bold;
+  /* Hace que el texto sea negrita */
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #7085fd;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #7085fd;
+}
+
+.boton-radio {
+  width: 15px;
+  height: 15px;
+}
+
+.marked {
+  border: 4px solid #7085fd;
+  background-color: #7085fd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.answer {
+  padding: 10px;
+  border: 4px solid #7085fd;
+  border-radius: 4px;
+  display: block;
+}
+
+.respuesta-radio {
+  display: flex;
+  align-items: center;
+}
+
+.bloque-preguntas-respuestas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* Reduzco el margen superior */
+  border: 2px solid;
+  max-height: 70vh;
+  /* Altura máxima del contenedor */
+  overflow-y: auto;
+  /* Habilita el desplazamiento vertical */
+}

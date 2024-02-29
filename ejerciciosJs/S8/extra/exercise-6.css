@@ -1,0 +1,37 @@
+
+body{
+    font-family: 'Grenze Gotisch', sans-serif;
+    background-image: url("s8_img/batalla.avif"); /* Cambia la URL de la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo en la ventana */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    
+}
+p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.c-characters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.c-characters__item{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    height: 380px;
+    max-width: 100%;
+}
+button {
+    height: 37px;
+    width: 110px;
+}

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-family: revolution;
+  line-height: 1.5;
+  color: rgb(41, 41, 41);
+  background-image: url('img/1600w-ETHQMb93Qzk.webp'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+  background-size: cover; /* Ajustar la imagen al tamaño de la ventana del navegador */
+  background-position: center; /* Centrar la imagen en la ventana del navegador */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(212, 212, 212);
+  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+}
+
+input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+}
+
+.li-container {
+  background-color: white;
+  width: 100%;
+  color: darkslategray;
+  margin-top: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  font-family: fantasy;
+  background-color: teal;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+.empty {
+  color: darkslategrey;
+}
+
+.delete-btn {
+  background-color: #f78c79; 
+  color: #fff;
+  border: none; 
+  padding: 5px 10px; 
+  border-radius: 3px; 
+  margin-left: 10px; 
+}
+
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: calc(100% / 7);
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.task {
+  color: red;
+  margin-left: 5px;
+}
+
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script defer src="main.js"></script>
+    </head>
+
+    <body>
+        <form id="form">
+            <input name="number1" id="number1" class="inputText text-danger"/> <!-- text-danger lo que hace es poner un elemento en rojo -->
+            <input name="number2" id="number2" class="inputText"/>
+            <button id="button" onclick="calculate()" type="button">Calcular resultado</button> <!-- onclick="calculate()" ESTO ES UN EVENTO es algo que ocurre a partir de una accion del usuario, onclick es un evento que se lanza cuando le damos click al boton -->
+            <p>El resultado es: <span id="result"></span></p>
+        </form>
+    </body>
+
+</html>
