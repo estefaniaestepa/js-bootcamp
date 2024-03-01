@@ -1,3 +1,7 @@
+body {
+    color: white;
+}
+
 .b-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -79,4 +83,9 @@ h2 {
     /* Ajuste: añadir posición relativa */
     z-index: 3;
     /* Ajuste: aumentar el z-index para que esté por encima */
+}
+
+.bloque-personajes {
+    display: flex;
+    align-items: center;
 }

@@ -11,7 +11,7 @@ La base de datos solo tiene 20 personajes así que lo ideal sería ocular el bot
  */
 
 
-let divpersonajes = document.querySelector('[data-fn="characters"]');
+let divPersonajes = document.querySelector('[data-fn="characters"]');
 let pagPersonajes = -1; //cada vez que le demos click (para que cuando cuando salga 0 le sume 1)
 let limitePersonajes = [{ "limite<": 0, "limite>": 4 }, { "limite<": 5, "limite>": 9 }, { "limite<": 10, "limite>": 14 }, { "limite<": 15, "limite>": 19 }];//por cada click que le damos al boton cogeremos un elemento de este arreglo de objetos
 
@@ -19,6 +19,7 @@ const getPersonajes = async () => {
   let limiteInferior = 0, limiteSuperior = 0; //creamos dos variables en una sóla línea
   let img = "";
   let nombre = "";
+  let divBloquepersonajes = "";
 
   try {
     const responsePersonajes = await fetch(`http://localhost:3000/characters?_page=1&_limit=20`);
@@ -32,6 +33,10 @@ const getPersonajes = async () => {
     boton.addEventListener('click', async (Event) => {
       pagPersonajes++;
 
+      divBloquepersonajes = document.createElement('div'); //ceamos un div para cada los 5 personajes que se crean cuando le damos al botón
+      divBloquepersonajes.className = "bloque-personajes";
+      divBloquepersonajes.innerText = "Página " + (parseInt(pagPersonajes) + 1); //lo convertimos a número
+
       limiteInferior = limitePersonajes[pagPersonajes]["limite<"]; //obtenemos de una posicion expecifica del array limite de personajes, la clave de limite<
       limiteSuperior = limitePersonajes[pagPersonajes]["limite>"];
       for (let i = limiteInferior; i <= limiteSuperior; i++) {
@@ -41,8 +46,10 @@ const getPersonajes = async () => {
         nombre.innerText = resultPersonajes[i].name;
         img.src = resultPersonajes[i].image;
         img.setAttribute('style', `height: 250px ; width: 280px`);
-        divpersonajes.appendChild(img);
-        divpersonajes.appendChild(nombre);
+
+        divBloquepersonajes.appendChild(img);
+        divBloquepersonajes.appendChild(nombre);
+        divPersonajes.appendChild(divBloquepersonajes);//primero hijos y luego el padre
       }
       console.log("---");
       console.log(resultPersonajes);
